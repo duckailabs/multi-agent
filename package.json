@@ -1,0 +1,45 @@
+{
+  "name": "multi-agent",
+  "version": "1.0.0",
+  "description": "Multi-agent testing framework for P2P networks",
+  "type": "module",
+  "scripts": {
+    "test": "tsx test/p2p/run-test.ts",
+    "test:watch": "tsx watch test/p2p/run-test.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "keywords": [
+    "p2p",
+    "testing",
+    "multi-agent",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "viem": "^2.21.57",
+    "dotenv": "^16.4.7",
+    "events": "^3.3.0",
+    "secp256k1": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@types/secp256k1": "^4.0.6",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
