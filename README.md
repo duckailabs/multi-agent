@@ -1,5 +1,7 @@
 # Multi-Agent Testing Framework
 
+> ⚠️ **IMPORTANT NOTICE**: The Base Sepolia P2P network used by this framework is currently not open to the public. The underlying node implementation will be open-sourced soon. Stay tuned for updates!
+
 A testing framework for simulating multiple agents in a P2P network environment, specifically designed for testing agent interactions on the Base Sepolia network.
 
 ## Features
